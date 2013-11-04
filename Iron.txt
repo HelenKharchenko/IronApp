@@ -2,6 +2,7 @@ private public plug (in; out)
 public temperature level knob (parameter temperature)
 public water tank
 public vaporization button (on; off)
+public vaporization knob
 public indication light (on; off)
 public audio indicator (on; off)
 private inactivity timer
