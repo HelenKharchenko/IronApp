@@ -17,7 +17,7 @@ public on plug in {
 }
 
 public on temperature knob level change {
-   refresh boundary temperature level for electric thermostat
+   update boundary temperature level for electric thermostat
 }
 
 private on thermal cutout trig
