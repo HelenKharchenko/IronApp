@@ -44,7 +44,7 @@ private on motion sensor trigger {
 }
 
 private on inactivity timer trigger {
-    if left inactive time > time out then switch off electric heating element and turn on audio indicator
+    if left inactive time > time out then turn off electric heating element and turn on audio indicator
 }
   
 public on plug out {
