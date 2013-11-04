@@ -6,7 +6,7 @@ public indication light (on; off)
 public audio indicator (on; off)
 private inactivity timer
 private electric heating element (on; off; )
-private electric thermostat (parameter boudary temperature)
+private electric thermostat (parameter boundary temperature)
 private thermal cutout
 private motion sensor
 
@@ -20,7 +20,7 @@ public on temperature knob level change {
    refresh boundary temperature level for electric thermostat
 }
 
-private on thermal cutout trig
+private on thermal cutout trigger {
    if temperature > boundary temperature level and electric thermostat failed to turn off electric heating element then turn off electric heating element and turn on audio indicator 
 }
 
@@ -30,7 +30,7 @@ public on vaporization button click {
 }
 
 private on inactivity timer trigger {
-    if left inactive time > timeout then turn off electric heating element and turn on audio indicator
+    if left inactive time > time out then turn off electric heating element and turn on audio indicator
 }
   
 public on plug out {
