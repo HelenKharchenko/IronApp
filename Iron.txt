@@ -30,6 +30,10 @@ public on vaporization button click {
    else start water flow from water tank to steam generator
 }
 
+public on vaporization knob level change {
+   update boundary water flow level
+}
+
 private on motion sensor trigger {
    if iron moves then restart inactivity timer
 }
