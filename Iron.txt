@@ -1,7 +1,8 @@
 private public plug (in; out)
 public temperature level knob (parameter temperature)
 public water tank
-public vaporization knob (on; off)
+public vaporization button (on; off)
+public vaporization knob
 public indication light (on; off)
 public audio indicator (on; off)
 private inactivity timer
@@ -17,7 +18,7 @@ public on plug in {
 }
 
 public on temperature knob level change {
-   refresh boundary temperature level for electric thermostat
+   update boundary temperature level for electric thermostat
 }
 
 private on thermal cutout trigger {
@@ -27,6 +28,14 @@ private on thermal cutout trigger {
 public on vaporization button click {
    if vaporization is on then stop water flow from water tank to steam generator 
    else start water flow from water tank to steam generator
+}
+
+public on vaporization knob level change {
+   update boundary water flow level
+}
+
+private on motion sensor trigger {
+   if iron moves then restart inactivity timer
 }
 
 private on inactivity timer trigger {
