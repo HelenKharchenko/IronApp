@@ -29,6 +29,10 @@ public on vaporization button click {
    else start water flow from water tank to steam generator
 }
 
+private on motion sensor trigger {
+   if iron moves then restart inactivity timer
+}
+
 private on inactivity timer trigger {
     if left inactive time > timeout then turn off electric heating element and turn on audio indicator
 }
