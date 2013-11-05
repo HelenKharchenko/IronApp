@@ -9,7 +9,7 @@ private inactivity timer
 private electric heating element (on; off; )
 private electric thermostat (parameter boundary temperature)
 private thermal cutout
-private motion sensor
+private motion detector
 
 public on plug in {
    electric thermostat constantly checks temperature
