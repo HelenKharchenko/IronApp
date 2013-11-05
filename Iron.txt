@@ -3,7 +3,7 @@ public temperature level knob (parameter temperature)
 public water tank
 public vaporization button (on; off)
 public vaporization knob
-public anti-calc button (on; off)
+public calc-clean button (on; off)
 public indication light (on; off)
 public audio indicator (on; off)
 private inactivity timer
@@ -35,7 +35,7 @@ public on vaporization knob level change {
    update boundary water flow level
 }
 
-public on anti-calc button click {
+public on calc-clean button click {
    start max water flow from water tank to steam generator
 }
 
